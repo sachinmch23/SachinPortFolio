@@ -1,6 +1,6 @@
 const openBtn = document.getElementById("openBtn");
 const popup = document.getElementById("popup");
-const closeBtn = document.getElementById("closeBtn");
+const closeBtn = document.getElementById("popupcloseBtn");
 
 openBtn.addEventListener("click", () =>{
     popup.style.display ="block";
