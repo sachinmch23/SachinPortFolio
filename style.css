@@ -133,10 +133,17 @@ body{
     margin-top:5px;
 }
 .btn{
-    margin-left:20px;
+    margin-left:70px;
     height:30px;
     width:40%;
     margin-top:10px;
+}
+.popupclose{
+    margin-top:10px;
+    border:2px solid black;
+    background-color: #a1c4fd; 
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 
