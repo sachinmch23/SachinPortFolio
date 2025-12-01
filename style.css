@@ -51,7 +51,7 @@ body{
 .box1{
     height:120px;
     width:120px;
-    background-color: rgb(152, 193, 30);
+    background-color: rgb(233, 69, 19);
     border-radius: 50%;
     display: flex;
     text-align:center;
@@ -88,7 +88,7 @@ body{
 .box4{
     height:120px;
     width:120px;
-    background-color: grey;
+    background-color: green;
     border-radius: 50%;
      display: flex;
     text-align:center;
@@ -121,7 +121,7 @@ body{
     position:fixed;
     height:300px;
     width:300px;
-    background-color: rgb(198, 173, 70);
+     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 40%, #a1c4fd 100%);
     box-shadow: 0 0 10px white;
     border-radius: 10px;
     
@@ -179,6 +179,48 @@ left:96%;
 bottom:53%;
 position: fixed;
 
+}
+
+.chatbot{
+    height:60px;
+    width:60px;
+    bottom:120px;
+    left:94%;
+    position: fixed;
+    border:2px solid aqua;
+    border-radius:50%;
+    border-color: red;
+   cursor: pointer;
+   box-shadow:0 0 20px rgb(252, 192, 40);
+    
+}
+.chatbot:hover{
+    scale:0.95;
+    border-color: rgb(252, 192, 40);
+   cursor: pointer;
+   box-shadow:0 0 20px red;
+}
+.chatbotpopup{
+    height: 500px;
+    width: 250px;
+    position:fixed;
+    bottom:150px;
+    left:80%;
+    display: none;
+   background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 40%, #a1c4fd 100%);
+   border-radius: 10px;
+   box-shadow: 0 0 10px;
+}
+.chatinpbtn{
+    display:flex;
+    gap:5px;
+    top:73%;
+    margin-left: 15px;
+     position: fixed;
+}
+.sendquestioninput{
+    height:30px;
+    border-radius: 5px;
 }
 
 
