@@ -13,7 +13,17 @@ closeBtn.addEventListener("click" , () => {
 })
 
 
+const chatopen = document.getElementById("chatbotopen");
+const chatpopup = document.getElementById("chatbotpopup");
+const chatclose = document.getElementById("chatbotclose");
 
+chatopen.addEventListener("click", () => {
+    chatpopup.style.display ="block";
+});
+
+chatclose.addEventListener("click", () => {
+    chatpopup.style.display ="none";
+});
 
 
 
@@ -27,6 +37,7 @@ closeBtn.addEventListener("click" , () => {
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAQl55bPrJmIl_kkJE8wZyl8Tbj33D3mns",
@@ -80,3 +91,29 @@ form.addEventListener("submit", (e) => {
       console.log(err);
     });
 });
+
+
+
+///////////////////////////////////////////share quesiion button/////////
+const form1 = document.getElementById("askForm");
+
+form1.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const question = document.getElementById("question").value;
+ 
+
+  set(ref(db, "askquestion/" + Date.now()), {
+    question,
+   
+  })
+    .then(() => {
+      alert("Form submitted successfully!");
+      form1.reset();
+    })
+    .catch((err) => {
+      alert("Error");
+      console.log(err);
+    });
+});
+
