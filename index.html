@@ -15,18 +15,33 @@
                 <a class="nav">About</a>
                 <a class="nav">Image</a>
                 <a class="nav">Project</a>
-                <a class="nav">Contect</a>
+                <a class="nav" id="openBtn">Contect</a>
             </nav>
         </div>
     </div>
-
+    <!-- ================================================popup open==================================== -->
+    <div class="conpopup" id="popup">
+        <form id="contactForm">
+        <h3 style="text-align: center;">Contect me</h3>
+        <input type="name" placeholder="enter name" id="name" class="inp"/>
+         <input type="mobile" placeholder="enter name"id="mobile" class="inp"/>
+          <input type="email" placeholder="enter name"id="email" class="inp"/>
+           <input type="message" placeholder="enter name"id="msg" class="inp"/>
+           
+           <nav>
+            <Button class="btn" type="submit">Send</Button>
+            <Button id="closeBtn" class="btn">Close</Button>
+           </nav>
+           </form>
+          </div>
+<!-- ==================================================popup close============= -->
 
     <div class="content">
         <div>
             <img src="image/sacjpg1.jpg" alt="sachin Image" class="sachinimage">
         </div>
         <div class="details">
-            <div class="name">Sachin Pandit</div>
+            <div class="name"><span style="color:red">Sachin</span> Pandit</div>
             <h3>A Bit About Me</h3>
             <div>A highly motivated and responsible professional with strong </div>
             <div>skills in FrontEnd Development and experience in Frontend Developper.</div>
@@ -35,14 +50,106 @@
             <div>contributing positively to the organization.</div>
 
             <div class="social-touch">
-                 <div class="box1">Resume</div>
-                 <div class="box2">LinkedIn</div>
-                 <div class="box3">GitHub</div>
-                 <div class="box4">Contect</div>
+                 <a href="resume/Sachinjavafullstackresume.pdf" style="text-decoration: none; color:black;" target="_blank"><div class="box1">Resume</div></a>
+                  <a href="https://www.linkedin.com/posts/sachin-pandit-807b7a2b0_this-is-my-swing-airline-management-system-activity-7378612112929165312-dtWc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErsgwcBCK_pLlhV-uMXrZAHVrmho49NqDA" style="text-decoration: none; color:black; "><div class="box2">Linkedin</div></a>
+                  <a href="https://github.com/sachinmch23" style="text-decoration: none; color:black;"><div class="box3">GitHub</div></a>
+                  <div class="box4" id="openBtn">Contect</div>
+                
             </div>
         </div>
     </div>
+
+    <div class="footer">
+         <div>
+            <div class="foot">Instagram</div>
+            <div><a href="https://instagram.com">Instagram.com</a></div>
+         </div>
+         <div>
+            <div class="foot">Facebook</div>
+             <div><a href="https://facebook.com">Facebook.com</a></div>
+         </div>
+         <div>
+            <div class="foot">Gmail</div>
+             <div><a href="https://gmail.com">Gmail.com</a></div>
+         </div>
+         <div>
+            <div class="foot">Privacy Policy</div>
+             <div><a href="#">Privacy Policy sachin pandit @2026</a></div>
+         </div>
+    </div>
+
+
+
+    <div>
+        <a href="https://instagram.com" target="_blank"><img src="image/instagram.png" class="instagram"></a>
+        <a href="https://facebook.com" target="_blank"><img src="image/facebook.png" class="facebook"></a>
+        <a href="https://youtube.com" target="_blank"><img src="image/youtube.png" class="youtube"></a>
+        <a href="https://twiter.com" target="_blank"><img src="image/Twitter.png" class="twiter"></a>
+    </div>
+
+
+
+
+    <script src="./script.js" type="module">
+        
+// Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+// import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+// // import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAQl55bPrJmIl_kkJE8wZyl8Tbj33D3mns",
+//   authDomain: "portfoliocontect.firebaseapp.com",
+//   projectId: "portfoliocontect",
+//   storageBucket: "portfoliocontect.firebasestorage.app",
+//   messagingSenderId: "985114298964",
+//   appId: "1:985114298964:web:9fd62d0a1aa268c5c8fbc1",
+//   measurementId: "G-PL3SC16J4F",
+//   //databaseURL: "https://portfolio-connect-default-rtdb.asia-southeast1.firebasedatabase.app/",
+//   databaseURL: "https://portfoliocontect-default-rtdb.asia-southeast1.firebasedatabase.app/"
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+
+
+
+// //////////////////////////////////////conection completed//////////
+
+// const form = document.getElementById("contactForm");
+
+// form.addEventListener("submit", async (e) => {
+//   e.preventDefault();
+
+//   const name = document.getElementById("name").value;
+//   const mobile = document.getElementById("mobile").value;
+//   const email = document.getElementById("email").value;
+//   const message = document.getElementById("msg").value;
+
+//   try {
+//     await addDoc(collection(db, "contacts"), {
+//       name,
+//       mobile,
+//       email,
+//       message,
+//       timestamp: new Date()
+//     });
+//     alert("Form submitted successfully!");
+//     form.reset();
+//   } catch (error) {
+//     console.error("Error adding document: ", error);
+//     alert("Error submitting form!");
+//   }
+// });
+    </script>
 </body>
-
 </html>
-
