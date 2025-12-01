@@ -234,4 +234,121 @@ position: fixed;
     gap:100px;
      margin-top:70px;
 }
+}/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  /* Hero Content */
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .sachinimage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .name {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .social-touch {
+    gap: 20px;
+  }
+
+  .box1, .box2, .box3, .box4 {
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  /* Contact Popup */
+  .conpopup {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 20%;
+    padding-bottom: 20px;
+  }
+
+  .inp {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .btn {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /* Social Icons Right Side */
+  .instagram, .facebook, .youtube, .twiter {
+    left: 85%;
+  }
+
+  .instagram { bottom: 72%; }
+  .facebook  { bottom: 66%; }
+  .youtube   { bottom: 60%; }
+  .twiter    { bottom: 54%; }
+
+  /* Chatbot Floating Button */
+  .chatbot {
+    left: 80%;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Chatbot Popup */
+  .chatbotpopup {
+    width: 85%;
+    left: 7%;
+    bottom: 130px;
+  }
+
+  .chatinpbtn {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    bottom: 10px;
+    left: 0;
+    gap: 10px;
+  }
+
+  .sendquestioninput {
+    width: 65%;
+  }
 }
