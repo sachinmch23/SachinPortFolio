@@ -24,9 +24,9 @@
         <form id="contactForm">
         <h3 style="text-align: center;">Contect me</h3>
         <input type="name" placeholder="enter name" id="name" class="inp"/>
-         <input type="mobile" placeholder="enter name"id="mobile" class="inp"/>
-          <input type="email" placeholder="enter name"id="email" class="inp"/>
-           <input type="message" placeholder="enter name"id="msg" class="inp"/>
+         <input type="mobile" placeholder="enter mobile"id="mobile" class="inp"/>
+          <input type="email" placeholder="enter email"id="email" class="inp"/>
+           <input type="message" placeholder="enter message"id="msg" class="inp"/>
            
            <nav>
              <Button class="btn" type="submit">Send</Button>
@@ -35,8 +35,7 @@
            
             
            </form>
-           <a id="popupcloseBtn" class="btn">Close</a>
-          </div>
+           </div>
 <!-- ==================================================popup close============= -->
 
     <div class="content">
@@ -44,10 +43,10 @@
             <img src="image/sacjpg1.jpg" alt="sachin Image" class="sachinimage">
         </div>
         <div class="details">
-            <div class="name"><span style="color:red">Sachin</span> Pandit</div>
+            <div class="name"><span style="color:red"><u>Sachin</u></span> Pandit</div>
             <h3>A Bit About Me</h3>
             <div>A highly motivated and responsible professional with strong </div>
-            <div>skills in FrontEnd Development and experience in Frontend Developper.</div>
+            <div>skills in <span style="color:red;"><b>HTML, CSS, JS and REACT</b></span> and experience in Frontend Developper.</div>
             <div>Known for excellent communication, teamwork, and problem-solving abilities.</div>
             <div>Dedicated to delivering quality work, learning new skills, and </div>
             <div>contributing positively to the organization.</div>
@@ -56,7 +55,7 @@
                  <a href="resume/Sachinjavafullstackresume.pdf" style="text-decoration: none; color:black;" target="_blank"><div class="box1">Resume</div></a>
                   <a href="https://www.linkedin.com/posts/sachin-pandit-807b7a2b0_this-is-my-swing-airline-management-system-activity-7378612112929165312-dtWc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAErsgwcBCK_pLlhV-uMXrZAHVrmho49NqDA" style="text-decoration: none; color:black; "><div class="box2">Linkedin</div></a>
                   <a href="https://github.com/sachinmch23" style="text-decoration: none; color:black;"><div class="box3">GitHub</div></a>
-                  <div class="box4">Contect</div>
+                 <a href="https://wa.me/918527133546?text=Hello%20Sachin%20Sir" style="text-decoration: none; color:black;" target="_blank"><div class="box4">WhatsApp</div></a>
                 
             </div>
         </div>
@@ -81,7 +80,7 @@
          </div>
     </div>
 
-
+<!-- ///////////////////////////////////////////////chatbot popup///////////////////// -->
 
     <div>
         <a href="https://instagram.com" target="_blank"><img src="image/instagram.png" class="instagram"></a>
@@ -90,6 +89,24 @@
         <a href="https://twiter.com" target="_blank"><img src="image/Twitter.png" class="twiter"></a>
     </div>
 
+    <div>
+        <img src="image/robot.png" alt="chatbot" class="chatbot" id="chatbotopen">
+        <div class="chatbotpopup" id="chatbotpopup">
+            
+            <a class="chatbotclose" id="chatbotclose" style=" color:red; font-size: 30px; cursor:pointer;text-align:right "><b>X</b></a>
+            <form id="askForm"> 
+            <div style="text-align: center;"><b>Please ask any Question</b></div>
+              <div style=" margin:10px;">whats your name ?..</div>
+              <div class="chatinpbtn">
+                      <input type="text" placeholder="send question" id="question" class="sendquestioninput">
+                      <Button type="submit">Send</Button>
+                      </form>
+              </div>
+              
+        </div>
+    </div>
+
+<!-- ///////////////////////////////////////////////chatbot popup close///////////////////// -->
 
 
 
